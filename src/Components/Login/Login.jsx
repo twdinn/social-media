@@ -13,7 +13,9 @@ const Login = () => {
 
         <button className="sign_up">Sign up</button>
       </div>
-      <h1>Social Media App</h1>
+      <div>
+        <h1>Social Media App</h1>
+      </div>
     </div>
   );
 };
