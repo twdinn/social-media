@@ -39,14 +39,20 @@
   border-radius: 0.25rem;
 }
 
-.sign_up {
+.login {
+  font-weight: bold;
+  background-color: #7c1304;
+}
+
+button {
   margin-top: 2rem;
-  width: 15rem;
-  height: 2.5rem;
+  width: 20rem;
+  height: 3rem;
+  font-weight: bold;
+  border-radius: 0.25rem;
 }
 
 .login_pic {
   width: 50vw;
   height: 100vh;
-  position: relative;
 }
