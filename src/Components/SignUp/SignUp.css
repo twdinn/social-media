@@ -1,7 +1,3 @@
-body {
-  margin: 0;
-}
-
 .sign_up {
   display: flex;
   flex-direction: column;
@@ -9,11 +5,18 @@ body {
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(#061208, #ad1a06);
+  background-color: #061208;
 }
-.sign_up h1 {
+.sign_up > h1 {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 3.5rem;
+  color: #ad1a06;
+}
+
+.sign_up > h2 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #ad1a06;
 }
 
 .sign_up_form {
@@ -27,10 +30,10 @@ body {
   padding: 1rem;
 }
 
-.sign_up_form input {
+.sign_up_form > input {
   margin: 1rem;
   height: 3rem;
-  border-radius: 0.05rem;
+  border-radius: 0.5rem;
 }
 
 .sign_up_btn {
