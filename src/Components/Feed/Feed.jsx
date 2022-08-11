@@ -1,6 +1,7 @@
 import React from "react";
+// import Post from "../Posts/Post";
 import "./Feed.css";
-import FeedPage from "./FeedPage";
+import FeedCard from "./FeedCard";
 import profile1 from "./profile1.jpg";
 import profile2 from "./profile2.jpg";
 import profile3 from "./profile3.jpg";
@@ -57,7 +58,7 @@ const Feed = () => {
   return (
     <div className="feed">
       {users.map((user) => (
-        <FeedPage
+        <FeedCard
           key={user.id}
           name={user.name}
           profile={user.profile}

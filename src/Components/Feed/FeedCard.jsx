@@ -1,5 +1,5 @@
 import React from "react";
-import "./FeedPage.css";
+import "./FeedCard.css";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import ThumbDownIcon from "@mui/icons-material/ThumbDown";

@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Login.css";
 import enterPic from "./enter-pic.jpg";
 import { Link } from "react-router-dom";
 // import Feed from "../Feed/Feed";
 
-const Login = () => {
-  const [name, setName] = useState("");
+const Login = (props) => {
+  // const [name, setName] = useState("");
+
+  // console.log(`Name = ${name}`);
   // const name = props.name;
   // const setName = props.setName;
 
@@ -23,7 +25,7 @@ const Login = () => {
             type="text"
             placeholder="Name or Username"
             required
-            onChange={(e) => setName(e.target.value)}
+            onChange={(e) => props.setName(e.target.value)}
           />
           <input
             className="login_password"
