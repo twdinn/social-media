@@ -1,7 +1,15 @@
-.post {
+/* .post {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  background-color: blue;
+  width: 3rem;
+  margin-left: 10rem;
 }
+
+.post > form > {
+  display: flex;
+}
+
+.post > button {
+  width: 1rem;
+} */

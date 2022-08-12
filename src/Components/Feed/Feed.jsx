@@ -8,14 +8,9 @@ import profile3 from "./profile3.jpg";
 import profile4 from "./profile4.jpg";
 import profile5 from "./profile5.jpg";
 import profile6 from "./profile6.jpg";
+import profile7 from "./profile7.jpg";
 
-const Feed = () => {
-  //props
-  // console.log("PROPS");
-  // console.log(`Name = ${props.name}`);
-
-  // const name = props.name;
-
+const Feed = (props) => {
   const users = [
     {
       id: 1,
@@ -23,37 +18,46 @@ const Feed = () => {
       profile: profile1,
       post: "What does a storm cloud wear under his raincoat? Thunderwear.",
     },
-    {
-      id: 2,
-      name: "Dinn",
-      profile: profile2,
-      post: "How does the ocean say hi? It waves!",
-    },
-    {
-      id: 3,
-      name: "William",
-      profile: profile3,
-      post: " What do you call a couple of chimpanzees sharing an Amazon account? PRIME-mates.",
-    },
-    {
-      id: 4,
-      name: "Tyler",
-      profile: profile4,
-      post: "Where do most horses live? In neighhh-borhoods!",
-    },
-    {
-      id: 5,
-      name: "Dinn",
-      profile: profile5,
-      post: "Why can’t you ever trust atoms? Because they make up everything.",
-    },
-    {
-      id: 6,
-      name: "William",
-      profile: profile6,
-      post: "Why are dogs terrible dancers? Because they have two left feet.",
-    },
+    // {
+    //   id: 2,
+    //   name: "Dinn",
+    //   profile: profile2,
+    //   post: "How does the ocean say hi? It waves!",
+    // },
+    // {
+    //   id: 3,
+    //   name: "William",
+    //   profile: profile3,
+    //   post: " What do you call a couple of chimpanzees sharing an Amazon account? PRIME-mates.",
+    // },
+    // {
+    //   id: 4,
+    //   name: "Tyler",
+    //   profile: profile4,
+    //   post: "Where do most horses live? In neighhh-borhoods!",
+    // },
+    // {
+    //   id: 5,
+    //   name: "Dinn",
+    //   profile: profile5,
+    //   post: "Why can’t you ever trust atoms? Because they make up everything.",
+    // },
+    // {
+    //   id: 6,
+    //   name: "William",
+    //   profile: profile6,
+    //   post: "Why are dogs terrible dancers? Because they have two left feet.",
+    // },
   ];
+
+  if (props.joke) {
+    users.push({
+      id: 7,
+      name: "Tyler",
+      profile: profile7,
+      post: props.joke,
+    });
+  }
 
   return (
     <div className="feed">

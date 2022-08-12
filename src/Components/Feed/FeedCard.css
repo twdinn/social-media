@@ -1,16 +1,16 @@
-.feed_page {
+.feed_card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 4rem;
-  margin-top: 0rem;
+  margin-top: 1.5rem;
   margin-bottom: 0rem;
   color: white;
   background-color: #061208;
 }
 
-.feed_page_card {
+.feed_card_container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -23,7 +23,7 @@
   background-color: #ad1a06;
 }
 
-.feed_page_name {
+.feed_card_name {
   display: flex;
   flex-direction: row-reverse;
   /* justify-content: center; */
@@ -31,24 +31,24 @@
   margin: 0.5rem;
 }
 
-.feed_page_name > h2 {
+.feed_card_name > h2 {
   margin-left: 1rem;
   margin-top: 2rem;
 }
 
-.profile {
+.feed_card_profile {
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.feed_page_posts > p {
+.feed_card_posts > p {
   font-size: 2rem;
   padding-left: 1rem;
 }
 
-.feed_page_icons {
+.feed_card_icons {
   display: flex;
   justify-content: center;
 
@@ -59,6 +59,6 @@
   width: 30rem;
 }
 
-.feed_page_icons > p {
+.feed_card_icons > p {
   margin: 1rem;
 }

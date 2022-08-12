@@ -5,16 +5,6 @@ import { Link } from "react-router-dom";
 // import Feed from "../Feed/Feed";
 
 const Login = (props) => {
-  // const [name, setName] = useState("");
-
-  // console.log(`Name = ${name}`);
-  // const name = props.name;
-  // const setName = props.setName;
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  // };
-
   return (
     <div className="login">
       <div className="login_left">

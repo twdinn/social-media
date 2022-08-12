@@ -8,8 +8,8 @@ import Nav from "./Nav/Nav";
 
 function App() {
   const [name, setName] = useState("");
+  const [joke, setJoke] = useState("");
 
-  console.log(`Name = ${name}`);
   return (
     <Router>
       <Routes>
@@ -17,8 +17,8 @@ function App() {
           path="/feed"
           element={
             <>
-              <Nav name={name} />
-              <Feed />
+              <Nav setJoke={setJoke} name={name} />
+              <Feed joke={joke} />
             </>
           }
         />

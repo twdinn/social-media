@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./SignUp.css";
 
 const SignUp = () => {
@@ -11,7 +12,12 @@ const SignUp = () => {
         <input type="text" placeholder="Confirm Name or Username" required />
         <input type="password" placeholder="Password" required />
         <input type="password" placeholder="Confirm Password" required />
-        <input className="sign_up_btn" type="submit" value="Sign Up" />
+
+        <Link to="/feed">
+          <button className="sign_up_btn" type="submit">
+            Sign Up
+          </button>
+        </Link>
       </form>
     </div>
   );
