@@ -1,0 +1,19 @@
+.feed_card_name {
+  display: flex;
+  flex-direction: row-reverse;
+  /* justify-content: center; */
+
+  margin: 0.5rem;
+}
+
+.feed_card_name > h2 {
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+
+.feed_card_profile {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  object-fit: cover;
+}

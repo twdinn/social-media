@@ -4,11 +4,11 @@ import SignUp from "./Components/SignUp/SignUp";
 import Feed from "./Components/Feed/Feed";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";
-import Nav from "./Nav/Nav";
+import Nav from "./Components/Nav/Nav";
 
 function App() {
   const [name, setName] = useState("");
-  const [joke, setJoke] = useState("");
+  const [post, setPost] = useState("");
 
   return (
     <Router>
@@ -17,8 +17,8 @@ function App() {
           path="/feed"
           element={
             <>
-              <Nav setJoke={setJoke} name={name} />
-              <Feed joke={joke} />
+              <Nav setPost={setPost} name={name} />
+              <Feed post={post} />
             </>
           }
         />

@@ -1,23 +1,24 @@
 import React from "react";
-import "./Posts.css";
 
-const Post = (props) => {
-  // const handlePostBtn = () => {
-  //   push;
-  // };
+const Posts = (props) => {
+  let post = "";
 
+  const handleSubmitBtn = (e) => {
+    props.setPost(post);
+    e.preventDefault();
+  };
   return (
     <div className="post">
       <form>
         <input
           type="text"
           placeholder="Post a Joke"
-          onChange={(e) => props.setPost(e.target.value)}
+          onChange={(e) => (post = e.target.value)}
         />
-        <button>Post</button>
+        <button onClick={handleSubmitBtn}>Post</button>
       </form>
     </div>
   );
 };
 
-export default Post;
+export default Posts;

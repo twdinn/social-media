@@ -1,17 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Nav.css";
 import HomeIcon from "@mui/icons-material/Home";
-import Post from "../Components/Posts/Posts";
+import Posts from "../Posts/Posts";
 
 const Nav = (props) => {
-  const [post, setPost] = useState("");
-
-  props.setJoke(post);
-
+  const setPost = props.setPost;
   return (
     <div className="nav">
-      <Post setPost={setPost} />
+      <Posts setPost={setPost} />
+
       <h1 className="nav_greeting">Welcome {props.name}</h1>
+      {/* <h2>{post}</h2> */}
 
       <nav>
         <li className="nav_item">
