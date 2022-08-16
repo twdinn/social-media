@@ -1,10 +1,12 @@
 import React from "react";
 
-const Posts = (props) => {
+import "./Posts.css";
+
+const Posts = ({ setPost }) => {
   let post = "";
 
   const handleSubmitBtn = (e) => {
-    props.setPost(post);
+    setPost(post);
     e.preventDefault();
   };
   return (

@@ -4,8 +4,7 @@ import FeedProfile from "./FeedProfile";
 import FeedPost from "./FeedPost";
 import FeedIcons from "./FeedIcons";
 
-const FeedCard = ({ id, name, profile, post }) => {
-  console.log(`user id = ${id}`);
+const FeedCard = ({ name, profile, post }) => {
   return (
     <div className="feed_card">
       <div className="feed_card_container">

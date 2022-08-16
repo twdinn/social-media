@@ -1,23 +1,15 @@
 import React from "react";
 import "./Nav.css";
-import HomeIcon from "@mui/icons-material/Home";
 import Posts from "../Posts/Posts";
+import NavGreeting from "./NavGreeting";
+import NavItems from "./NavItems";
 
-const Nav = (props) => {
-  const setPost = props.setPost;
+const Nav = ({ userName, name, setPost }) => {
   return (
     <div className="nav">
+      <NavGreeting name={name} userName={userName} />
       <Posts setPost={setPost} />
-
-      <h1 className="nav_greeting">Welcome {props.name}</h1>
-      {/* <h2>{post}</h2> */}
-
-      <nav>
-        <li className="nav_item">
-          <HomeIcon />
-        </li>
-        <li className="nav_item">Feed</li>
-      </nav>
+      <NavItems />
     </div>
   );
 };

@@ -1,0 +1,21 @@
+.post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post > form {
+  margin: 1rem;
+}
+
+.post > form > input {
+  position: absolute;
+  width: 15rem;
+  height: 2rem;
+}
+
+.post > form > button {
+  width: 3.5rem;
+  height: 2rem;
+  margin-left: 5rem;
+}

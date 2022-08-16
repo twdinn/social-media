@@ -34,13 +34,13 @@
   border-radius: 0.5rem;
   justify-content: space-around;
   width: 20rem;
-  height: 15rem;
+  height: 20rem;
   padding: 1rem;
 }
 
 .login_form > input {
   margin: 1rem;
-  height: 2.5rem;
+  height: 3rem;
   border-radius: 0.25rem;
 }
 

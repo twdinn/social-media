@@ -7,7 +7,18 @@ import { useState } from "react";
 import Nav from "./Components/Nav/Nav";
 
 function App() {
+  // const users = {
+  //   name: "test",
+  //   password: "test123",
+  // };
+
   const [name, setName] = useState("");
+  const [password, setPassword] = useState("");
+  // const [user, setUser] = useState({ name: "", password: "" });
+  // const [error, setError] = useState("");
+
+  console.log(name);
+  console.log(password);
   const [post, setPost] = useState("");
 
   return (
@@ -22,8 +33,24 @@ function App() {
             </>
           }
         />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/" element={<Login setName={setName} />} />
+        <Route
+          path="/signup"
+          element={
+            <SignUp
+            // setUserName={setUserName}
+            // setConfirmUserName={setConfirmUserName}
+            // setEmail={setEmail}
+            // setConfirmEmail={setConfirmEmail}
+            // setPassword={setPassword}
+            // setConfirmPassword={setConfirmPassword}
+            />
+          }
+        />
+
+        <Route
+          path="/"
+          element={<Login setName={setName} setPassword={setPassword} />}
+        />
       </Routes>
     </Router>
   );

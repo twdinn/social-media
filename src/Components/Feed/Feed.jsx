@@ -20,9 +20,9 @@ const Feed = ({ post }) => {
     },
     {
       id: 2,
-      name: "Dinn",
-      profile: profile2,
-      post: "How does the ocean say hi? It waves!",
+      name: "William",
+      profile: profile6,
+      post: "Why are dogs terrible dancers? Because they have two left feet.",
     },
     {
       id: 3,
@@ -40,13 +40,13 @@ const Feed = ({ post }) => {
       id: 5,
       name: "Dinn",
       profile: profile5,
-      post: "Why can’t you ever trust atoms? Because they make up everything.",
+      post: "Why can't you ever trust atoms? Because they make up everything.",
     },
     {
       id: 6,
-      name: "William",
-      profile: profile6,
-      post: "Why are dogs terrible dancers? Because they have two left feet.",
+      name: "Dinn",
+      profile: profile2,
+      post: "How does the ocean say hi? It waves!",
     },
   ];
 
