@@ -4,18 +4,18 @@
   align-items: center;
 }
 
-.post > form {
-  margin: 1rem;
+.post_input > input {
+  width: 20rem;
+  height: 3rem;
+  border: 0.2rem solid #061208;
+  border-radius: 0.8rem;
 }
 
-.post > form > input {
-  position: absolute;
-  width: 15rem;
-  height: 2rem;
-}
-
-.post > form > button {
-  width: 3.5rem;
-  height: 2rem;
-  margin-left: 5rem;
+.post_btn > button {
+  width: 5rem;
+  height: 3rem;
+  margin-left: 1rem;
+  margin-top: 0.1rem;
+  border: 0.2rem solid #061208;
+  border-radius: 0.8rem;
 }

@@ -4,7 +4,7 @@ import "./NavGreeting.css";
 const NavGreeting = ({ name }) => {
   return (
     <div className="nav_greeting">
-      <h1>Welcome {name}</h1>
+      <h1>{name}'s Feed</h1>
     </div>
   );
 };

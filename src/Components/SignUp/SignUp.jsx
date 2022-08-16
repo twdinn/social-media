@@ -11,16 +11,6 @@ const SignUp = ({
   setConfirmPassword,
   SignUp,
 }) => {
-  // const [details, setDetails] = useState({
-  //   userName: "",
-  //   email: "",
-  //   password: "",
-  // });
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   SignUp(details);
-  // };
   return (
     <div className="sign_up">
       <h1>Sensa Humour</h1>
@@ -45,8 +35,8 @@ const SignUp = ({
           onChange={(e) => setEmail(e.target.value)}
         />
         <input
-          type="Confirm Email"
-          placeholder="email"
+          type="email"
+          placeholder="Confirm Email"
           required
           onChange={(e) => setConfirmEmail(e.target.value)}
         />

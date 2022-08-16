@@ -9,8 +9,23 @@ import Nav from "./Components/Nav/Nav";
 function App() {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
 
   const [post, setPost] = useState("");
+  //Dummy Login Data
+  const users = {
+    name: "Tyler",
+    email: "test@test.com",
+    password: "test123",
+  };
+
+  // // Login Name and Password State
+  // const [loginName, setLoginName] = useState("");
+  // const [loginPassword, setLoginPassword] = useState("");
+
+  // Check if Login Name and Password are = to the Dummy Name and Password
+  const isValid =
+    name === users.name && email === users.email && password === users.password;
 
   return (
     <Router>
@@ -40,7 +55,14 @@ function App() {
 
         <Route
           path="/"
-          element={<Login setName={setName} setPassword={setPassword} />}
+          element={
+            <Login
+              setName={setName}
+              setPassword={setPassword}
+              setEmail={setEmail}
+              isValid={isValid}
+            />
+          }
         />
       </Routes>
     </Router>

@@ -10,16 +10,19 @@ const Posts = ({ setPost }) => {
     e.preventDefault();
   };
   return (
-    <div className="post">
-      <form>
+    <form className="post">
+      <div className="post_input">
         <input
           type="text"
           placeholder="Post a Joke"
           onChange={(e) => (post = e.target.value)}
         />
+      </div>
+
+      <div className="post_btn">
         <button onClick={handleSubmitBtn}>Post</button>
-      </form>
-    </div>
+      </div>
+    </form>
   );
 };
 

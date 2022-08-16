@@ -3,23 +3,7 @@ import "./Login.css";
 import enterPic from "./enter-pic.jpg";
 import { Link } from "react-router-dom";
 
-const Login = ({ setName, setPassword }) => {
-  //Dummy Login Data
-  const users = {
-    name: "Tyler",
-    password: "test123",
-  };
-
-  // Login Name and Password State
-  const [loginName, setLoginName] = useState("");
-  const [loginPassword, setLoginPassword] = useState("");
-
-  // Check if Login Name and Password are = to the Dummy Name and Password
-  const isValid = loginName === users.name && loginPassword === users.password;
-
-  setName(loginName);
-  setPassword(loginPassword);
-
+const Login = ({ setName, setPassword, isValid, setEmail }) => {
   return (
     <div className="login">
       <div className="login_left">
@@ -32,24 +16,21 @@ const Login = ({ setName, setPassword }) => {
             type="text"
             placeholder="Name or Username"
             required
-            // onChange={(e) => setName(e.target.value)}
-            onChange={(e) => setLoginName(e.target.value)}
-            // value={user.name}
+            onChange={(e) => setName(e.target.value)}
           />
-          {/* <input
+          <input
             className="login_email"
             type="text"
             placeholder="Email"
             required
-            onChange={(e) => setDetails({ ...details, email: e.target.value })}
-            value={details.email}
-          /> */}
+            onChange={(e) => setEmail(e.target.value)}
+          />
           <input
             className="login_password"
             type="password"
             placeholder="password"
             required
-            onChange={(e) => setLoginPassword(e.target.value)}
+            onChange={(e) => setPassword(e.target.value)}
           />
           <Link to="/feed">
             <button
