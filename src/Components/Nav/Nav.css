@@ -6,6 +6,7 @@
   height: 3.5rem;
   position: fixed;
   background-color: #ad1a06;
+  border: 0.2rem solid #061208;
 }
 
 .nav_item {

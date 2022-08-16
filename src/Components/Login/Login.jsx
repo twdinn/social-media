@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Login.css";
 import enterPic from "./enter-pic.jpg";
 import { Link } from "react-router-dom";
 
-const Login = ({ setName, setPassword, isValid, setEmail }) => {
+const Login = ({ setName, setPassword, isLoginData, setEmail }) => {
   return (
     <div className="login">
       <div className="login_left">
@@ -20,7 +20,7 @@ const Login = ({ setName, setPassword, isValid, setEmail }) => {
           />
           <input
             className="login_email"
-            type="text"
+            type="email"
             placeholder="Email"
             required
             onChange={(e) => setEmail(e.target.value)}
@@ -36,7 +36,7 @@ const Login = ({ setName, setPassword, isValid, setEmail }) => {
             <button
               className="login_submit_btn"
               type="submit"
-              disabled={!isValid}
+              disabled={!isLoginData}
               // onClick={handleLogin}
             >
               Login

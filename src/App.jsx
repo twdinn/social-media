@@ -12,6 +12,14 @@ function App() {
   const [email, setEmail] = useState("");
 
   const [post, setPost] = useState("");
+
+  const [userName, setUserName] = useState("");
+  const [confirmUserName, setConfirmUserName] = useState("");
+  // const [signUpEmail, setSignUpEmail] = useState("");
+  // const [confirmEmail, setConfirmEmail] = useState("");
+  // const [signUpPassword, setSignUpPassword] = useState("");
+  // const [confirmPassword, setConfirmPassword] = useState("");
+
   //Dummy Login Data
   const users = {
     name: "Tyler",
@@ -24,8 +32,10 @@ function App() {
   // const [loginPassword, setLoginPassword] = useState("");
 
   // Check if Login Name and Password are = to the Dummy Name and Password
-  const isValid =
+  const isLoginData =
     name === users.name && email === users.email && password === users.password;
+
+  const isSignedUp = userName !== "" && userName === confirmUserName;
 
   return (
     <Router>
@@ -34,7 +44,7 @@ function App() {
           path="/feed"
           element={
             <>
-              <Nav setPost={setPost} name={name} />
+              <Nav setPost={setPost} name={name} userName={userName} />
               <Feed post={post} />
             </>
           }
@@ -43,12 +53,13 @@ function App() {
           path="/signup"
           element={
             <SignUp
-            // setUserName={setUserName}
-            // setConfirmUserName={setConfirmUserName}
-            // setEmail={setEmail}
-            // setConfirmEmail={setConfirmEmail}
-            // setPassword={setPassword}
-            // setConfirmPassword={setConfirmPassword}
+              setUserName={setUserName}
+              setConfirmUserName={setConfirmUserName}
+              // setEmail={setSignUpEmail}
+              // setConfirmEmail={setConfirmEmail}
+              // setPassword={setSignUpPassword}
+              // setConfirmPassword={setConfirmPassword}
+              isSignedUp={isSignedUp}
             />
           }
         />
@@ -60,7 +71,7 @@ function App() {
               setName={setName}
               setPassword={setPassword}
               setEmail={setEmail}
-              isValid={isValid}
+              isLoginData={isLoginData}
             />
           }
         />

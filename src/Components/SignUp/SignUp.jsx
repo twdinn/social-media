@@ -5,11 +5,11 @@ import "./SignUp.css";
 const SignUp = ({
   setUserName,
   setConfirmUserName,
-  setEmail,
-  setConfirmEmail,
-  setPassword,
+  // setSignUpEmail,
+  // setConfirmEmail,
+  setSignUpPassword,
   setConfirmPassword,
-  SignUp,
+  isSignedUp,
 }) => {
   return (
     <div className="sign_up">
@@ -21,30 +21,32 @@ const SignUp = ({
           placeholder="Name or Username"
           required
           onChange={(e) => setUserName(e.target.value)}
+          name="username"
         />
         <input
           type="text"
           placeholder="Confirm Name or Username"
           required
           onChange={(e) => setConfirmUserName(e.target.value)}
+          name="confirmUsername"
         />
-        <input
+        {/* <input
           type="email"
           placeholder="Email"
           required
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => setSignUpEmail(e.target.value)}
         />
         <input
           type="email"
           placeholder="Confirm Email"
           required
           onChange={(e) => setConfirmEmail(e.target.value)}
-        />
+        /> */}
         <input
           type="password"
           placeholder="Password"
           required
-          onChange={(e) => setPassword(e.target.value)}
+          onChange={(e) => setSignUpPassword(e.target.value)}
         />
         <input
           type="password"
@@ -54,7 +56,9 @@ const SignUp = ({
         />
 
         <Link to="/feed">
-          <button className="sign_up_btn">Sign Up</button>
+          <button className="sign_up_btn" type="submit" disabled={!isSignedUp}>
+            Sign Up
+          </button>
         </Link>
       </form>
     </div>
