@@ -7,18 +7,9 @@ import { useState } from "react";
 import Nav from "./Components/Nav/Nav";
 
 function App() {
-  // const users = {
-  //   name: "test",
-  //   password: "test123",
-  // };
-
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
-  // const [user, setUser] = useState({ name: "", password: "" });
-  // const [error, setError] = useState("");
 
-  console.log(name);
-  console.log(password);
   const [post, setPost] = useState("");
 
   return (

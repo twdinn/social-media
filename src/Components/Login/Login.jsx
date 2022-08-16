@@ -4,14 +4,17 @@ import enterPic from "./enter-pic.jpg";
 import { Link } from "react-router-dom";
 
 const Login = ({ setName, setPassword }) => {
+  //Dummy Login Data
   const users = {
-    name: "test",
+    name: "Tyler",
     password: "test123",
   };
 
+  // Login Name and Password State
   const [loginName, setLoginName] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
 
+  // Check if Login Name and Password are = to the Dummy Name and Password
   const isValid = loginName === users.name && loginPassword === users.password;
 
   setName(loginName);
