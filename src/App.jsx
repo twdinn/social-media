@@ -12,13 +12,14 @@ function App() {
   const [email, setEmail] = useState("");
 
   const [post, setPost] = useState("");
+  const [image, setImage] = useState(null);
 
   const [userName, setUserName] = useState("");
   const [confirmUserName, setConfirmUserName] = useState("");
-  // const [signUpEmail, setSignUpEmail] = useState("");
-  // const [confirmEmail, setConfirmEmail] = useState("");
-  // const [signUpPassword, setSignUpPassword] = useState("");
-  // const [confirmPassword, setConfirmPassword] = useState("");
+  const [signUpEmail, setSignUpEmail] = useState("");
+  const [confirmEmail, setConfirmEmail] = useState("");
+  const [signUpPassword, setSignUpPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
 
   //Dummy Login Data
   const users = {
@@ -31,11 +32,20 @@ function App() {
   // const [loginName, setLoginName] = useState("");
   // const [loginPassword, setLoginPassword] = useState("");
 
-  // Check if Login Name and Password are = to the Dummy Name and Password
+  // Check if Login Name and Password are = to the Dummy Name and Password (Used to enable Login Button on Login Page)
   const isLoginData =
     name === users.name && email === users.email && password === users.password;
 
-  const isSignedUp = userName !== "" && userName === confirmUserName;
+  const isSignedUp =
+    userName !== "" &&
+    confirmUserName !== "" &&
+    signUpPassword !== "" &&
+    confirmPassword !== "" &&
+    signUpEmail !== "" &&
+    confirmEmail !== "" &&
+    userName === confirmUserName &&
+    signUpPassword === confirmPassword &&
+    signUpEmail === confirmEmail;
 
   return (
     <Router>
@@ -44,8 +54,13 @@ function App() {
           path="/feed"
           element={
             <>
-              <Nav setPost={setPost} name={name} userName={userName} />
-              <Feed post={post} />
+              <Nav
+                setPost={setPost}
+                setImage={setImage}
+                name={name}
+                userName={userName}
+              />
+              <Feed post={post} image={image} />
             </>
           }
         />
@@ -55,10 +70,10 @@ function App() {
             <SignUp
               setUserName={setUserName}
               setConfirmUserName={setConfirmUserName}
-              // setEmail={setSignUpEmail}
-              // setConfirmEmail={setConfirmEmail}
-              // setPassword={setSignUpPassword}
-              // setConfirmPassword={setConfirmPassword}
+              setSignUpEmail={setSignUpEmail}
+              setConfirmEmail={setConfirmEmail}
+              setSignUpPassword={setSignUpPassword}
+              setConfirmPassword={setConfirmPassword}
               isSignedUp={isSignedUp}
             />
           }

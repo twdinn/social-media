@@ -5,8 +5,8 @@ import "./SignUp.css";
 const SignUp = ({
   setUserName,
   setConfirmUserName,
-  // setSignUpEmail,
-  // setConfirmEmail,
+  setSignUpEmail,
+  setConfirmEmail,
   setSignUpPassword,
   setConfirmPassword,
   isSignedUp,
@@ -30,7 +30,7 @@ const SignUp = ({
           onChange={(e) => setConfirmUserName(e.target.value)}
           name="confirmUsername"
         />
-        {/* <input
+        <input
           type="email"
           placeholder="Email"
           required
@@ -41,7 +41,7 @@ const SignUp = ({
           placeholder="Confirm Email"
           required
           onChange={(e) => setConfirmEmail(e.target.value)}
-        /> */}
+        />
         <input
           type="password"
           placeholder="Password"

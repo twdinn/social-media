@@ -8,9 +8,8 @@ const Login = ({ setName, setPassword, isLoginData, setEmail }) => {
     <div className="login">
       <div className="login_left">
         <h1>Sensa Humour</h1>
-        <form className="login_form">
-          {/* {error != "" ? <div className="error">{error}</div> : ""} */}
 
+        <form className="login_form">
           <input
             className="login_name"
             type="text"

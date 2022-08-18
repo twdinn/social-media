@@ -6,7 +6,7 @@ import { Link, NavLink } from "react-router-dom";
 const NavItems = () => {
   return (
     <nav className="nav_items">
-      <NavLink to="/nav">
+      <NavLink to="/">
         <li className="nav_item">
           <HomeIcon />
         </li>
