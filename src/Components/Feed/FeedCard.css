@@ -29,3 +29,11 @@
   padding-left: 2rem;
   object-fit: cover;
 }
+
+.feed_img {
+  width: 24rem;
+  height: 32rem;
+  margin: 1rem;
+  padding-left: 2rem;
+  object-fit: cover;
+}

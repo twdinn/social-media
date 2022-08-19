@@ -1,18 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Posts.css";
-// import Image from "./Image";
+import Image from "./Image";
 
-const Posts = ({ setPost }) => {
+const Posts = ({ setPost, setValue, value }) => {
+  const [image, setImage] = useState("");
   let post = "";
-  // const [value, setValue] = useState(post);
 
   const handleSubmitBtn = (e) => {
     e.preventDefault();
     setPost(post);
+    console.log(post);
   };
 
-  // const handlePost = () => {
-  //   setValue("");
+  const handleImage = (e) => {
+    const [file] = e.target.files;
+    setImage(URL.createObjectURL(file));
+  };
+
+  // const ClearField = () => {
+  //   setPost("");
   // };
 
   return (
@@ -21,13 +27,25 @@ const Posts = ({ setPost }) => {
         <input
           type="text"
           placeholder="Post a Joke"
-          onChange={(e) => (post = e.target.value)}
+          onChange={(e) => {
+            post = e.target.value;
+            // setValue(e.currentTarget.value);
+          }}
+          // value={value}
         />
-        {/* <Image setImage={setImage} /> */}
+        <label for="images">Add Image</label>
+        <input
+          id="images"
+          type="file"
+          accept="image/*"
+          hidden
+          onChange={handleImage}
+        />
+        <img src={image} alt="" />
       </div>
 
       <div className="post_btn">
-        <button type="submit">Post</button>
+        <button>Post</button>
       </div>
     </form>
   );

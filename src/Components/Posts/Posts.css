@@ -2,7 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
+
+/* .post_input {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+} */
 
 .post_input > input {
   width: 30rem;

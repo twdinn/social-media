@@ -12,7 +12,8 @@ function App() {
   const [email, setEmail] = useState("");
 
   const [post, setPost] = useState("");
-  const [image, setImage] = useState(null);
+  const [image, setImage] = useState("");
+  const [value, setValue] = useState("");
 
   const [userName, setUserName] = useState("");
   const [confirmUserName, setConfirmUserName] = useState("");
@@ -27,10 +28,6 @@ function App() {
     email: "test@test.com",
     password: "test123",
   };
-
-  // // Login Name and Password State
-  // const [loginName, setLoginName] = useState("");
-  // const [loginPassword, setLoginPassword] = useState("");
 
   // Check if Login Name and Password are = to the Dummy Name and Password (Used to enable Login Button on Login Page)
   const isLoginData =
@@ -55,8 +52,12 @@ function App() {
           element={
             <>
               <Nav
+                setValue={setValue}
+                value={value}
                 setPost={setPost}
+                post={post}
                 setImage={setImage}
+                image={image}
                 name={name}
                 userName={userName}
               />
