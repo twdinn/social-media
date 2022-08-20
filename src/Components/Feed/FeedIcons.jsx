@@ -10,20 +10,21 @@ const FeedIcons = () => {
   const [dislike, setDislike] = useState(false);
 
   const handleLove = () => {
-    // 👇️ toggle
+    //  Toggle Love Icon
     setLove((current) => !current);
   };
   const handleLike = () => {
-    // 👇️ toggle
+    //  Toggle Like Icon
     setLike((current) => !current);
   };
   const handleDislike = () => {
-    // 👇️ toggle
+    // Toggle Dislike Icon
     setDislike((current) => !current);
   };
   return (
     <div className="feed_card_icons">
       <p>
+        {/* If Icon Color is White When Clicked Change to Red. If Red change to White */}
         <FavoriteIcon
           style={{
             color: love ? "red" : "",
@@ -33,6 +34,7 @@ const FeedIcons = () => {
         />
       </p>
       <p>
+        {/* If Icon Color is White When Clicked Change to Blue. If Blue change to White */}
         <ThumbUpIcon
           style={{
             color: like ? "blue" : "",
@@ -42,6 +44,7 @@ const FeedIcons = () => {
         />
       </p>
       <p>
+        {/* If Icon Color is White When Clicked Change to Red, If Red change to White */}
         <ThumbDownIcon
           style={{
             color: dislike ? "red" : "",

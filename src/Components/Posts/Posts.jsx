@@ -1,21 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Posts.css";
-import Image from "./Image";
+// import Image from "./Image";
 
 const Posts = ({ setPost, setValue, value }) => {
-  const [image, setImage] = useState("");
+  // const [image, setImage] = useState("");
   let post = "";
 
   const handleSubmitBtn = (e) => {
     e.preventDefault();
     setPost(post);
-    console.log(post);
   };
 
-  const handleImage = (e) => {
-    const [file] = e.target.files;
-    setImage(URL.createObjectURL(file));
-  };
+  // const handleImage = (e) => {
+  //   const [file] = e.target.files;
+  //   setImage(URL.createObjectURL(file));
+  // };
 
   // const ClearField = () => {
   //   setPost("");
@@ -33,7 +32,7 @@ const Posts = ({ setPost, setValue, value }) => {
           }}
           // value={value}
         />
-        <label for="images">Add Image</label>
+        {/* <label for="images">Add Image</label>
         <input
           id="images"
           type="file"
@@ -41,7 +40,7 @@ const Posts = ({ setPost, setValue, value }) => {
           hidden
           onChange={handleImage}
         />
-        <img src={image} alt="" />
+        <img src={image} alt="" style={{ width: "2rem" }} /> */}
       </div>
 
       <div className="post_btn">

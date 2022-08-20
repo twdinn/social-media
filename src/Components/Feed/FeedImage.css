@@ -1,7 +1,10 @@
 .feed_card_image {
-  width: 24rem;
-  height: 24rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16rem;
+  height: 16rem;
   object-fit: contain;
-  padding-left: 1rem;
-  margin: 2rem;
+  /* padding-left: 1rem;
+  margin: 1rem; */
 }

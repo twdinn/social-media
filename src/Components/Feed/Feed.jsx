@@ -13,7 +13,10 @@ import DogGlasses from "./dog-glasses.jpg";
 import Monkey from "./monkey.jpg";
 import Horse from "./horse.jpg";
 
+// Displays all info on Feed Page
+// Takes in Post from User
 const Feed = ({ post, image }) => {
+  // Users Object with Name, Profile Picture, an Optional Image and a Post
   const users = [
     {
       id: 1,
@@ -58,7 +61,7 @@ const Feed = ({ post, image }) => {
       post: "How does the ocean say hi? It waves!",
     },
   ];
-
+  // If There is a Post by the User, create User Object and Push it (Unshift) to the front of the Object Array
   if (post) {
     users.unshift({
       id: users.length + 1,
@@ -69,9 +72,11 @@ const Feed = ({ post, image }) => {
     });
   }
 
+  // Map Through User Array
   return (
     <div className="feed">
       {users.map((user) => (
+        // FeedCard is Used to Display all info inside a Card
         <FeedCard
           key={user.id}
           name={user.name}

@@ -1,3 +1,7 @@
+//Sensa Humor Joke App (Social Media)
+//By: Tyler Dinn
+//Date: Aug 19 2022
+
 import "./App.css";
 import Login from "./Components/Login/Login";
 import SignUp from "./Components/SignUp/SignUp";
@@ -7,20 +11,25 @@ import { useState } from "react";
 import Nav from "./Components/Nav/Nav";
 
 function App() {
+  // Use state to get info from Login Form and Compare it to Dummy Login Data
+  // Also Display Name on Feed
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
 
-  const [post, setPost] = useState("");
-  const [image, setImage] = useState("");
-  const [value, setValue] = useState("");
-
+  // Use state to get Data from Sign Up Form
+  // Use to Display Name on Feed
   const [userName, setUserName] = useState("");
   const [confirmUserName, setConfirmUserName] = useState("");
   const [signUpEmail, setSignUpEmail] = useState("");
   const [confirmEmail, setConfirmEmail] = useState("");
   const [signUpPassword, setSignUpPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+
+  //Use state to get the Users Post to the Feed
+  const [post, setPost] = useState("");
+  const [image, setImage] = useState("");
+  const [value, setValue] = useState("");
 
   //Dummy Login Data
   const users = {
@@ -33,6 +42,7 @@ function App() {
   const isLoginData =
     name === users.name && email === users.email && password === users.password;
 
+  // Check if both username, both email and both password fields are equal (Used to enable Sign Up Button on Sign Up Page)
   const isSignedUp =
     userName !== "" &&
     confirmUserName !== "" &&
@@ -48,6 +58,10 @@ function App() {
     <Router>
       <Routes>
         <Route
+          //Route to the Feed Page
+          // Has a Nav and Feed Component
+          // Nav is used to pull back the Post data so that it can be used in the Feed Component.
+          //And to also Display the name or username. Depending on if the user Logs in or Signs up
           path="/feed"
           element={
             <>
@@ -66,6 +80,10 @@ function App() {
           }
         />
         <Route
+          // Route to the Sign Up Page
+          // Pulls back all the Input Data
+          // is checked Using (isSignedUp)
+          // and passes the UserName to the Nav to be Displayed
           path="/signup"
           element={
             <SignUp
@@ -81,6 +99,10 @@ function App() {
         />
 
         <Route
+          // Route to Login Page
+          // Pulls back all Input Data
+          // is checked using (isLoginData)
+          // and passes name to Nav to be Displayed
           path="/"
           element={
             <Login
