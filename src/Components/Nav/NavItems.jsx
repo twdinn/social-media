@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const NavItems = () => {
   return (
     <nav className="nav_items">
+      {/* Scrolls to Top of Page When HomeIcon is Clicked */}
       <li
         className="nav_item"
         onClick={() => {
@@ -15,8 +16,9 @@ const NavItems = () => {
         <HomeIcon />
       </li>
 
+      {/* Goes Back to Login Page */}
       <Link to="/">
-        <li className="nav_item">Sign Out</li>
+        <li className="nav_item sign-out">Sign Out</li>
       </Link>
     </nav>
   );

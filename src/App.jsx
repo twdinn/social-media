@@ -28,8 +28,6 @@ function App() {
 
   //Use state to get the Users Post to the Feed
   const [post, setPost] = useState("");
-  const [image, setImage] = useState("");
-  const [value, setValue] = useState("");
 
   //Dummy Login Data
   const users = {
@@ -66,16 +64,12 @@ function App() {
           element={
             <>
               <Nav
-                setValue={setValue}
-                value={value}
                 setPost={setPost}
                 post={post}
-                setImage={setImage}
-                image={image}
                 name={name}
                 userName={userName}
               />
-              <Feed post={post} image={image} />
+              <Feed post={post} />
             </>
           }
         />

@@ -2,7 +2,7 @@ import React from "react";
 import "./FeedCard.css";
 import FeedProfile from "./FeedProfile";
 import FeedPost from "./FeedPost";
-import FeedImage from "./FeedImage";
+
 import FeedIcons from "./FeedIcons";
 
 // FeedCard is Used to Display each Object inside a Card on the Feed Page
@@ -14,7 +14,6 @@ const FeedCard = ({ name, profile, post, image }) => {
         <FeedProfile name={name} profile={profile} />
 
         {image ? <img className="feed_img" src={image} alt="" /> : null}
-        {/* {image ? <FeedImage image={image} /> : null} */}
 
         {/* Displays the Post (Joke) */}
         <FeedPost post={post} />

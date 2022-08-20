@@ -49,7 +49,6 @@ const Login = ({ setName, setPassword, isLoginData, setEmail }) => {
       <div className="login_right">
         <img className="login_pic" src={enterPic} alt="" />
       </div>
-      {/* <Feed name={name} /> */}
     </div>
   );
 };

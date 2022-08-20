@@ -72,7 +72,7 @@ const Feed = ({ post, image }) => {
     });
   }
 
-  // Map Through User Array
+  // Map Through Users Array
   return (
     <div className="feed">
       {users.map((user) => (
