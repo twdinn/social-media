@@ -2,6 +2,10 @@
 //By: Tyler Dinn
 //Date: Aug 19 2022
 
+//name: "Tyler",
+//email: "test@test.com",
+//password: "test123",
+
 import "./App.css";
 import Login from "./Components/Login/Login";
 import SignUp from "./Components/SignUp/SignUp";

@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Posts.css";
 
 const Posts = ({ setPost }) => {
-  let post = "";
+  // State to keep track of the post input value
+  const [post, setPostValue] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // Call the setPost function passed in as a prop to add the post to the feed
     setPost(post);
+    // Clear the post input value
+    setPostValue("");
   };
 
   return (
@@ -15,8 +19,9 @@ const Posts = ({ setPost }) => {
         <input
           type="text"
           placeholder="Post a Joke"
+          value={post}
           onChange={(e) => {
-            post = e.target.value;
+            setPostValue(e.target.value);
           }}
         />
       </div>
