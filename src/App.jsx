@@ -10,7 +10,7 @@ import "./App.css";
 import Login from "./Components/Login/Login";
 import SignUp from "./Components/SignUp/SignUp";
 import Feed from "./Components/Feed/Feed";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import Nav from "./Components/Nav/Nav";
 
