@@ -11,3 +11,9 @@ a {
   color: black;
   font-weight: bold;
 }
+
+@media (max-width: 730px) {
+  .nav_items {
+    font-size: 0.5rem;
+  }
+}

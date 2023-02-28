@@ -1,5 +1,4 @@
 import React from "react";
-// import Post from "../Posts/Post";
 import "./Feed.css";
 import FeedCard from "./FeedCard";
 import Profile1 from "./profile1.jpg";

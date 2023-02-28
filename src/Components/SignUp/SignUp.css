@@ -40,3 +40,21 @@
   background-color: #7c1304;
   font-weight: bold;
 }
+
+@media (max-width: 390px) {
+  .sign_up > h1 {
+    font-size: 2rem;
+  }
+
+  .sign_up > h2 {
+    font-size: 1.5rem;
+  }
+
+  .sign_up_form {
+    width: 14rem;
+  }
+
+  .sign_up_btn {
+    width: 14rem;
+  }
+}

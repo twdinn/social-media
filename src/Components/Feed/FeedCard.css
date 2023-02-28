@@ -21,14 +21,14 @@
   height: auto;
   background-color: #ad1a06;
 }
-
+/* 
 .feed_card > img {
   width: 24rem;
   height: 32rem;
   margin: 1rem;
   padding-left: 2rem;
   object-fit: cover;
-}
+} */
 
 .feed_img {
   width: 24rem;
@@ -36,4 +36,22 @@
   margin: 1rem;
   padding-left: 2rem;
   object-fit: cover;
+}
+
+@media (max-width: 950px) {
+  .feed_card_container {
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+}
+
+@media (max-width: 615px) {
+  .feed_card {
+    width: 20rem;
+  }
+  .feed_img {
+    width: 15rem;
+    height: 20rem;
+    padding-left: 1rem;
+  }
 }

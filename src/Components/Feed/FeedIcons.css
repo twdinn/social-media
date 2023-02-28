@@ -8,8 +8,15 @@
   border-radius: 1rem;
   width: 30rem;
   background-color: black;
+  cursor: pointer;
 }
 
 .feed_card_icons > p {
   margin: 1rem;
+}
+
+@media (max-width: 615px) {
+  .feed_card_icons {
+    width: 20rem;
+  }
 }
