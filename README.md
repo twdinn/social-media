@@ -1,4 +1,4 @@
-https://twdinn.github.io/social-media-app
+https://twdinn.github.io/social-media/
 
 # Getting Started with Create React App
 
