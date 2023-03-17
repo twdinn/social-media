@@ -1,26 +1,15 @@
 {
   "files": {
-    "main.css": "/social-media/static/css/main.87b80b2f.css",
-    "main.js": "/social-media/static/js/main.23e02349.js",
+    "main.css": "/social-media/static/css/main.6007b73b.css",
+    "main.js": "/social-media/static/js/main.cbf9c2e7.js",
     "static/js/787.d7317416.chunk.js": "/social-media/static/js/787.d7317416.chunk.js",
-    "static/media/horse.jpg": "/social-media/static/media/horse.39a2eb681209ad30ea48.jpg",
-    "static/media/monkey.jpg": "/social-media/static/media/monkey.ea366f6c621fb8e4af5f.jpg",
-    "static/media/profile4.jpg": "/social-media/static/media/profile4.1b99d2955c9bea1718c4.jpg",
-    "static/media/profile7.jpg": "/social-media/static/media/profile7.18e045e17b6b222850ee.jpg",
-    "static/media/profile1.jpg": "/social-media/static/media/profile1.be99b5f496d9f6e405f1.jpg",
-    "static/media/enter-pic.jpg": "/social-media/static/media/enter-pic.69197634c2737cb5388e.jpg",
-    "static/media/dog-glasses.jpg": "/social-media/static/media/dog-glasses.3520332df027c86b54ab.jpg",
-    "static/media/profile2.jpg": "/social-media/static/media/profile2.990bf8344d8845fea242.jpg",
-    "static/media/profile3.jpg": "/social-media/static/media/profile3.95b4120aba2c60d8faa5.jpg",
-    "static/media/profile6.jpg": "/social-media/static/media/profile6.09724c4722bce34a2196.jpg",
-    "static/media/profile5.jpg": "/social-media/static/media/profile5.3172159aeb1632762540.jpg",
     "index.html": "/social-media/index.html",
-    "main.87b80b2f.css.map": "/social-media/static/css/main.87b80b2f.css.map",
-    "main.23e02349.js.map": "/social-media/static/js/main.23e02349.js.map",
+    "main.6007b73b.css.map": "/social-media/static/css/main.6007b73b.css.map",
+    "main.cbf9c2e7.js.map": "/social-media/static/js/main.cbf9c2e7.js.map",
     "787.d7317416.chunk.js.map": "/social-media/static/js/787.d7317416.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.87b80b2f.css",
-    "static/js/main.23e02349.js"
+    "static/css/main.6007b73b.css",
+    "static/js/main.cbf9c2e7.js"
   ]
 }
