@@ -1,6 +1,5 @@
 import React from "react";
-import "./Nav.css";
-import Posts from "../Posts/Posts";
+import Posts from "./Posts";
 import NavGreeting from "./NavGreeting";
 import NavItems from "./NavItems";
 

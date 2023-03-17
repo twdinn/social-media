@@ -7,12 +7,13 @@
 //password: "test123",
 
 import "./App.css";
-import Login from "./Components/Login/Login";
-import SignUp from "./Components/SignUp/SignUp";
-import Feed from "./Components/Feed/Feed";
+import Login from "./Pages/Login";
+import SignUp from "./Pages/SignUp";
+import Feed from "./Pages/Feed";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";
-import Nav from "./Components/Nav/Nav";
+import Nav from "./Components/Nav";
+import ProfilePage from "./Pages/ProfilePage";
 
 function App() {
   // Use state to get info from Login Form and Compare it to Dummy Login Data
@@ -109,6 +110,21 @@ function App() {
               setEmail={setEmail}
               isLoginData={isLoginData}
             />
+          }
+        />
+        <Route
+          path="/profile"
+          element={
+            <>
+              <Nav
+                setPost={setPost}
+                post={post}
+                name={name}
+                userName={userName}
+              />
+
+              <ProfilePage />
+            </>
           }
         />
       </Routes>

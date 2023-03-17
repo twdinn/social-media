@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./FeedIcons.css";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import ThumbDownIcon from "@mui/icons-material/ThumbDown";

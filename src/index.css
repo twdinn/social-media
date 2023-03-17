@@ -3,16 +3,329 @@
   padding: 0;
 }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Nav */
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 3.5rem;
+  position: fixed;
+  background-color: #ad1a06;
+  border: 0.2rem solid #061208;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.nav_item {
+  list-style-type: none;
+}
+
+@media (max-width: 730px) {
+  .nav_items {
+    font-size: 0.5rem;
+  }
+}
+
+/* Nav Greeting */
+.nav_greeting {
+  font-size: 1.2rem;
+}
+
+/* Nav Items */
+.nav_items {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  cursor: pointer;
+}
+.nav_item {
+  margin: 0.5rem;
+}
+
+@media (max-width: 730px) {
+  .nav_items {
+    font-size: 0.5rem;
+  }
+}
+
+/* Feed */
+.feed {
+  background-color: #061208;
+  overflow: auto;
+}
+
+/* FeedCard */
+.feed_card_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem;
+  margin-left: 30rem;
+  margin-right: 30rem;
+  color: white;
+  background-color: #061208;
+  border-radius: 1rem;
+}
+
+.feed_card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 2px solid red;
+  border-radius: 1rem;
+  width: 30rem;
+  height: auto;
+  background-color: #ad1a06;
+}
+
+.feed_img {
+  width: 24rem;
+  height: 32rem;
+  margin: 1rem;
+  padding-left: 2rem;
+  object-fit: cover;
+}
+
+@media (max-width: 950px) {
+  .feed_card_container {
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+}
+
+@media (max-width: 615px) {
+  .feed_card {
+    width: 20rem;
+  }
+  .feed_img {
+    width: 15rem;
+    height: 20rem;
+    padding-left: 1rem;
+  }
+}
+
+/* FeedIcons */
+.feed_card_icons {
+  display: flex;
+  justify-content: center;
+
+  border-bottom: 2px solid red;
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+  border-radius: 1rem;
+  width: 30rem;
+  background-color: black;
+  cursor: pointer;
+}
+
+.feed_card_icons > p {
+  margin: 1rem;
+}
+
+@media (max-width: 615px) {
+  .feed_card_icons {
+    width: 20rem;
+  }
+}
+
+/* FeedPost */
+
+.feed_card_post > p {
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+@media (max-width: 615px) {
+  .feed_card_post > p {
+    font-size: 1rem;
+  }
+}
+
+/* FeedProfile */
+.feed_card_name {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  margin: 0.5rem;
+}
+
+.feed_card_name > h2 {
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+
+.feed_card_profile {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Login */
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #061208;
+  object-fit: contain;
+  height: 100vh;
+  width: 100vw;
+}
+
+.login > h1 {
+  color: #7c1304;
+  margin-bottom: 2rem;
+}
+.login_form {
+  display: flex;
+  flex-direction: column;
+  border: 0.1rem solid red;
+  background: linear-gradient(#ad1a06, #061208);
+  border-radius: 0.5rem;
+  justify-content: space-around;
+  width: 20rem;
+  height: 20rem;
+  padding: 1rem;
+}
+
+.login_form > input {
+  margin: 1rem;
+  height: 3rem;
+  border-radius: 0.25rem;
+}
+
+.login_submit_btn {
+  font-weight: bold;
+  background-color: #7c1304;
+}
+
+button {
+  margin-top: 2rem;
+  width: 20rem;
+  height: 3rem;
+  font-weight: bold;
+  border-radius: 0.25rem;
+}
+
+@media (max-width: 380px) {
+  .login_form {
+    width: 15rem;
+  }
+
+  button {
+    width: 15rem;
+  }
+}
+
+/* Sign Up */
+.sign_up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #061208;
+}
+.sign_up > h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #ad1a06;
+}
+
+.sign_up_form {
+  display: flex;
+  flex-direction: column;
+  border: 0.1rem solid red;
+  background: linear-gradient(#ad1a06, #061208);
+  border-radius: 0.5rem;
+  width: 20rem;
+  height: 35rem;
+  padding: 1rem;
+}
+
+.sign_up_form > input {
+  margin: 1rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+}
+
+.sign_up_btn {
+  background-color: #7c1304;
+  font-weight: bold;
+}
+
+@media (max-width: 390px) {
+  .sign_up > h1 {
+    font-size: 2rem;
+  }
+
+  .sign_up > h2 {
+    font-size: 1.5rem;
+  }
+
+  .sign_up_form {
+    width: 14rem;
+  }
+
+  .sign_up_btn {
+    width: 14rem;
+  }
+}
+
+/* Posts */
+.post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.post_input > input {
+  width: 30rem;
+  height: 3rem;
+  border: 0.2rem solid #061208;
+  border-radius: 0.8rem;
+}
+
+.post_btn > button {
+  width: 5rem;
+  height: 3rem;
+  margin-left: 1rem;
+  margin-top: 0.1rem;
+  border: 0.2rem solid #061208;
+  border-radius: 0.8rem;
+}
+
+@media (max-width: 950px) {
+  .post_input > input {
+    width: 20rem;
+    margin-left: 6rem;
+  }
+}
+@media (max-width: 730px) {
+  .post_input > input {
+    width: 15rem;
+    height: 2rem;
+  }
+  .post_btn > button {
+    height: 2rem;
+    margin-left: 0.5rem;
+  }
+}
+
+@media (max-width: 615px) {
+  .post_input > input {
+    width: 10rem;
+  }
+  .post_btn > button {
+    margin-left: 0.1rem;
+  }
 }

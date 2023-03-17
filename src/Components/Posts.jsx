@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./Posts.css";
 
 const Posts = ({ setPost }) => {
   // State to keep track of the post input value

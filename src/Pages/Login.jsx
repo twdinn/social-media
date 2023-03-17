@@ -1,6 +1,4 @@
 import React from "react";
-import "./Login.css";
-import enterPic from "./enter-pic.jpg";
 import { Link } from "react-router-dom";
 
 const Login = ({ setName, setPassword, isLoginData, setEmail }) => {

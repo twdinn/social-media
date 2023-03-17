@@ -1,6 +1,4 @@
-// import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./SignUp.css";
 
 const SignUp = ({
   setUserName,
@@ -14,7 +12,6 @@ const SignUp = ({
   return (
     <div className="sign_up">
       <h1>Sensa Humour</h1>
-      <h2>Sign Up</h2>
       <form className="sign_up_form">
         <input
           type="text"

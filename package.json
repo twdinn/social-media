@@ -1,6 +1,6 @@
 {
-  "homepage": "https://twdinn.github.io/social-media-app",
-  "name": "social-media-app",
+  "homepage": "https://twdinn.github.io/social-media",
+  "name": "social-media",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

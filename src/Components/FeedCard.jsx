@@ -1,8 +1,6 @@
 import React from "react";
-import "./FeedCard.css";
 import FeedProfile from "./FeedProfile";
 import FeedPost from "./FeedPost";
-
 import FeedIcons from "./FeedIcons";
 
 // FeedCard is Used to Display each Object inside a Card on the Feed Page

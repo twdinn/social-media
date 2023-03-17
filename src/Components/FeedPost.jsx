@@ -1,5 +1,4 @@
 import React from "react";
-import "./FeedPost.css";
 
 // Displays the Post(Joke)
 const FeedPost = ({ post }) => {
