@@ -13,7 +13,6 @@ import Feed from "./Pages/Feed";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import Nav from "./Components/Nav";
-import ProfilePage from "./Pages/ProfilePage";
 
 function App() {
   // Use state to get info from Login Form and Compare it to Dummy Login Data
@@ -110,21 +109,6 @@ function App() {
               setEmail={setEmail}
               isLoginData={isLoginData}
             />
-          }
-        />
-        <Route
-          path="/profile"
-          element={
-            <>
-              <Nav
-                setPost={setPost}
-                post={post}
-                name={name}
-                userName={userName}
-              />
-
-              <ProfilePage />
-            </>
           }
         />
       </Routes>

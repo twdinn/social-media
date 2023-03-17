@@ -5,7 +5,7 @@ import React from "react";
 const NavGreeting = ({ name, userName }) => {
   return (
     <nav className="nav_greeting">
-      {name ? <h1>{name}'s Feed</h1> : <h1>{userName}'s Profile</h1>}
+      {name ? <h1>{name}'s Feed</h1> : <h1>{userName}'s Feed</h1>}
     </nav>
   );
 };
